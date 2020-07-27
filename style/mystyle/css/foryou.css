@@ -1,0 +1,174 @@
+/* .navbar-nav {
+  margin-top: 10px;
+} */
+svg {
+  vertical-align: middle !important;
+}
+
+.dropbtn {
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  text-decoration: none;
+  color: #57606F !important;
+  font-family: Kanit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.dropbtn:hover {
+  position: relative;
+  top: 8px;
+  left: 3px;
+  /* background-color: #F16136; */
+  height: 60px;
+  width: 96px;
+  align-self: stretch;
+}
+
+
+.nav-item {
+  margin: auto;
+  margin-left: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: #f1f1f1; */
+  min-width: 160px;
+  width: 315px;
+  height: 250px;
+  /* box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); */
+  z-index: 1;
+  /* border-color: #F16136; */
+  background-image: url(../img/border.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 15px;
+  border: none;
+  /* top: 38px; */
+}
+
+.dropdown-content a:last-child {
+  border-bottom: 0px;
+}
+
+
+.dropdown-content:hover {
+  /* top: 40px; */
+}
+
+/* .dropdown-content::before,
+.dropdown-content::after {
+  content: "";
+  position: absolute;
+  border: 14px solid transparent;
+  border-bottom: 0;
+  left: 30px;
+} */
+
+.dropdown-content::before {
+  border-top-color: #F16136;
+}
+
+.dropdown-content a {
+  color: black;
+  /* padding: 10px 16px; */
+  text-decoration: none;
+
+  height: 35px;
+  display: block;
+  font-family: "Kanit";
+  font-weight: normal;
+  border: none;
+
+}
+
+.dropdown-content a:hover {
+  border-radius: 6px;
+  /* background-color: #F16136; */
+  color: #e4842b;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover {
+  /* top: -12px; */
+}
+
+.dropdown:hover .dropbtn {
+  /* background-color: #F16136; */
+  color: #e4842b;
+}
+
+.submenu {
+  width: 368px;
+  position: absolute;
+  top: 70px;
+  left: -5px;
+  padding-top: 10px;
+  padding-bottom: 50px;
+  background: rgba(255, 255, 255, .9) none;
+  background-size: 55px auto;
+  border: 1px solid #e4842b;
+  border-top: none;
+  display: none;
+
+}
+
+.dropbtn:hover {
+  background: url(../img/dropbg.png) top repeat-x;
+  color: #fff !important;
+  font-weight: 600;
+}
+
+.dropdown-toggle::after {
+  background-image: url(../img/dropdown.png);
+}
+
+.btn-group-vertical>.btn-group:after,
+.btn-group-vertical>.btn-group:before,
+.btn-toolbar:after,
+.btn-toolbar:before,
+.clearfix:after,
+.clearfix:before,
+.container-fluid:after,
+.container-fluid:before,
+.container:after,
+.container:before,
+.dl-horizontal dd:after,
+.dl-horizontal dd:before,
+.form-horizontal .form-group:after,
+.form-horizontal .form-group:before,
+.modal-footer:after,
+.modal-footer:before,
+.nav:after,
+.nav:before,
+.navbar-collapse:after,
+.navbar-collapse:before,
+.navbar-header:after,
+.navbar-header:before,
+.navbar:after,
+.navbar:before,
+.pager:after,
+.pager:before,
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+  display: table;
+  content: unset;
+}
