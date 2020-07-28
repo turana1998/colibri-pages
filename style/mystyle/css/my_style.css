@@ -13,15 +13,13 @@
     border-radius: 10px;
 }
 
-.faq-div-all:active,
-.faq-blog:active {
+.faq-div-all:active {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
 }
 
-.faq-div-all:hover,
-.faq-blog:hover {
+.faq-div-all:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
     -ms-transform: translateY(-5px);
     transform: translateY(-5px);
@@ -50,8 +48,16 @@ body {
     font-family: Kanit !important;
 }
 
+.hover-item {
+    text-align: center;
+    width: 98px;
+}
+
 .nav-item {
     margin-left: 10px;
+    position: relative;
+    list-style-type: none;
+
 }
 
 .dropdown-menu {
@@ -456,7 +462,7 @@ body {
 .nav-logo {
     width: 160px;
     height: 112px;
-    background-color: #F16136;
+    background-image: url(../img/logobg.png);
     border-radius: 0px 0px 8px 8px;
     justify-content: center;
     align-items: center;
@@ -545,6 +551,7 @@ hr {
 
 .menu-bottom {
     display: flex;
+    height: 60px;
     padding-left: 40px;
     font-family: Kanit;
     font-style: normal;
@@ -2319,8 +2326,8 @@ input[type="range"] {
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
     background-color: #e74c3c;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     border-radius: 50%;
     border: 2px solid white;
     cursor: pointer;
@@ -2382,12 +2389,39 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .slick-slide {
     margin: 0px 20px;
+    height: 90px !important;
+}
+
+.slick-slide img:hover {
+    width: 65px;
+    height: 65px;
+}
+
+.slick-slide img:hover+.calc_img_p {
+    display: block;
+}
+
+.calc_img_p {
+    display: none;
+    width: 50px;
+    margin-top: 10px;
+    font-size: 17px;
+    margin-top: 8px;
+    margin-left: 6px;
+    line-height: 1.286;
+    letter-spacing: normal;
+    color: #F16136;
+    text-align: center;
+    pointer-events: none;
+    -webkit-transition: opacity .25s cubic-bezier(0, 0, .2, 1);
+    transition: opacity .25s cubic-bezier(0, 0, .2, 1);
 }
 
 .slick-slide img {
     width: 48px;
     height: 48px;
 }
+
 
 .slick-slider {
     position: relative;

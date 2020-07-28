@@ -44,8 +44,8 @@
             </div>
             <div class="collapse navbar-collapse col-auto " id="navbarTogglerDemo03">
                 <div class="phone m-auto col-auto ">
-                    <div class="phone-icon mr-2">
-                        <i class="fas fa-phone-alt"></i>
+                    <div class=" mr-2">
+                        <img src="./style/mystyle/img/telefon.png">
                     </div>
                     <div class="phone-numbers ml-2">
                         <span>(+994) 12 310 39 39</span>
@@ -70,23 +70,22 @@
                         </ul>
                     </div>
                     <hr>
+
                     <div class="menu-bottom pl-5">
                         <ul class="navbar-nav beShow">
                             <li class="nav-item">
                                 <a class="nav-link" href="haqqinda.html">Haqqımızda</a>
+
                             </li>
-                            <li class="nav-item" style="margin-top: 13px !important;">
-                                <div class="dropdown">
-                                    <button class="dropbtn" class="nav-link">Xidmətlər</button>
-                                    <!-- <div id="triangle-down"></div> -->
-                                    <div class="dropdown-content">
-                                        <a href="xidmetlerimiz.html">Təhlükəli yüklərin daşınması</a>
-                                        <a href="#">Maye məhsulların daşınması</a>
-                                        <a href="#">Gömrük sənədləşməsi</a>
-                                        <a href="#">Təhlükəli yüklərin daşınması</a>
-                                        <a href="#">Maye məhsulların daşınması</a>
-                                        <a href="#">Gömrük sənədləşməsi</a>
-                                    </div>
+                            <li class="nav-item nav-item-drop">
+                                <a class="nav-link hover-item">Xidmətlər</a>
+                                <div class="dropdown-content">
+                                    <a href="xidmetlerimiz.html">Təhlükəli yüklərin daşınması</a>
+                                    <a href="#">Maye məhsulların daşınması</a>
+                                    <a href="#">Gömrük sənədləşməsi</a>
+                                    <a href="#">Təhlükəli yüklərin daşınması</a>
+                                    <a href="#">Maye məhsulların daşınması</a>
+                                    <a href="#">Gömrük sənədləşməsi</a>
                                 </div>
                             <li class="nav-item">
                                 <a class="nav-link" href="tarifler.html">Tariflər</a>
@@ -193,8 +192,8 @@
                 <label class="select_label2">Çatdırılma haqqı, USD</label>
             </div>
             <div class="labelss col-12">
-                <div class="value ">0,55</div>
-                <div class="value ">1,56</div>
+                <div class="value " id='ceki'>0,55</div>
+                <div class="value " id='deyer'>1,56</div>
             </div>
             <input id="range_input_1" style="background-color: #bdc3c7" type="range" min="0" max="100" step="0.1"
                 value="0.55">
@@ -235,51 +234,60 @@
             <div class="itemss">
                 <section class="customer-logos slider">
 
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(245,654)">
                         <img src="style/mystyle/img/noto-v1_t-shirtblack.png"
                             onmouseover="this.src='style/mystyle/img/noto-v1_t-shirt.png'"
                             onmouseout="this.src='style/mystyle/img/noto-v1_t-shirtblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">TSHIRT</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(456,654)">
                         <img src="style/mystyle/img/emojione_mobile-phoneblack.png"
                             onmouseover="this.src='style/mystyle/img/emojione_mobile-phone.png'"
                             onmouseout="this.src='style/mystyle/img/emojione_mobile-phoneblack.png'" border="0"
                             alt="" />
+                        <p class="calc_img_p">TELEFON</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(456,658)">
                         <img src="style/mystyle/img/twemoji_shortsblack.png"
                             onmouseover="this.src='style/mystyle/img/twemoji_shorts.png'"
                             onmouseout="this.src='style/mystyle/img/twemoji_shortsblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">ŞORTİK</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(456,654)">
                         <img src="style/mystyle/img/twemoji_mans-shoeblack.png"
                             onmouseover="this.src='style/mystyle/img/twemoji_mans-shoe.png'"
                             onmouseout="this.src='style/mystyle/img/twemoji_mans-shoeblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">AYAQQABI</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(325,654)">
                         <img src="style/mystyle/img/twemoji_laptopblack.png"
                             onmouseover="this.src='style/mystyle/img/twemoji_laptop.png'"
                             onmouseout="this.src='style/mystyle/img/twemoji_laptopblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">NOTBUK</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(456,987)">
                         <img src="style/mystyle/img/noto_watchblack.png"
                             onmouseover="this.src='style/mystyle/img/noto_watch.png'"
                             onmouseout="this.src='style/mystyle/img/noto_watchblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">SAAT</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(296,654)">
                         <img src="style/mystyle/img/twemoji_billed-capblack.png"
                             onmouseover="this.src='style/mystyle/img/twemoji_billed-cap.png'"
                             onmouseout="this.src='style/mystyle/img/twemoji_billed-capblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">KEPKA</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(456,478)">
                         <img src="style/mystyle/img/emojione_blue-bookblack.png"
                             onmouseover="this.src='style/mystyle/img/emojione_blue-book.png'"
                             onmouseout="this.src='style/mystyle/img/emojione_blue-bookblack.png'" border="0" alt="" />
+                        <p class="calc_img_p">KİTAB</p>
                     </div>
-                    <div class="slide">
+                    <div class="slide" onclick="set_calc(258,654)">
                         <img src="style/mystyle/img/emojione_camerablack.png"
                             onmouseover="this.src='style/mystyle/img/emojione_camera.png'"
                             onmouseout="this.src='style/mystyle/img/emojione_camerablack.png'" border="0" alt="" />
+                        <p class="calc_img_p">KAMERA</p>
                     </div>
                 </section>
             </div>
@@ -724,6 +732,14 @@
                         "transition." + o)
             })
         });
+    </script>
+
+    <script>
+        function set_calc(ceki, deyer) {
+            //console.log("er");
+            document.getElementById('ceki').innerHTML = ceki;
+            document.getElementById('deyer').innerHTML = deyer;
+        }
     </script>
 </body>
 

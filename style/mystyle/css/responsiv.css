@@ -240,6 +240,10 @@
 }
 
 @media only screen and (max-device-width: 767px) {
+    .qayda_img {
+        display: none;
+    }
+
     .connect {
         height: 30px;
     }
