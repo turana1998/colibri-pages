@@ -4,20 +4,54 @@
     display: flex;
     flex-direction: column;
 } */
+input,
+button {
+    outline: none;
+}
+
+.navbar-nav>li>a {
+    padding-top: 12px;
+    padding-bottom: 0;
+
+}
+
+.menu-top .navbar-nav>li>a {
+    padding-top: 36px;
+    padding-bottom: 8px;
+}
+
+.carousel-indicators {
+    bottom: 0px;
+    justify-content: start;
+    margin-left: 2% !important;
+}
+
+.carousel-indicators li {
+    border: none;
+    width: 9px;
+    height: 9px;
+}
+
+.carousel-indicators .active {
+    background-color: #F16136;
+    border: 2px solid #FFFFFF;
+    width: 9px;
+    height: 9px;
+}
+
 .faq-div-all,
 .faq-blog {
     box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
     width: 100%;
     overflow: hidden;
-    transition: transform 250ms, box-shadow 250ms;
     border-radius: 10px;
 }
 
-.faq-div-all:active {
+/* .faq-div-all:active {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16), 0 3px 6px rgba(0, 0, 0, .23);
     -ms-transform: translateY(-2px);
     transform: translateY(-2px);
-}
+} */
 
 .faq-div-all:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, .19), 0 6px 6px rgba(0, 0, 0, .23);
@@ -108,9 +142,9 @@ body {
 .mobile-navbar {
     position: absolute;
     width: 204px;
-    height: 88vh;
+    height: 102vh;
     left: 0px;
-    top: 95px;
+    top: 64px;
     background: #F16136;
     display: none !important;
 }
@@ -492,7 +526,7 @@ body {
 }
 
 .logo-mobile {
-    height: 96px !important;
+    height: 64px !important;
     background-color: #F16136;
     align-items: center;
 }
@@ -552,7 +586,7 @@ hr {
 .menu-bottom {
     display: flex;
     height: 60px;
-    padding-left: 40px;
+    padding-left: 60px;
     font-family: Kanit;
     font-style: normal;
     font-weight: bold;
@@ -618,6 +652,7 @@ hr {
     cursor: pointer;
     border: none;
     display: flex;
+    margin-left: 25px;
     justify-content: space-evenly;
     align-items: center;
     width: 194px;
@@ -731,6 +766,8 @@ textarea {
     background-color: #374C3F;
     border-radius: 50%;
     cursor: pointer;
+    margin: auto;
+
 }
 
 @media only screen and (min-device-width: 100px) and (max-device-width: 1024px) {
@@ -740,6 +777,7 @@ textarea {
 
     .footer-info-mobile {
         display: flex !important;
+
     }
 
     .contain {
@@ -754,10 +792,12 @@ textarea {
 
     .footer-bottom {
         display: none !important;
+
     }
 
     .footer-bottom-mobile {
         display: flex !important;
+        height: 105px;
     }
 
     .condition {
@@ -795,6 +835,16 @@ textarea {
     box-sizing: border-box;
     border-radius: 4px;
     padding: 0 15px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* Second color */
+
+    color: #555D69;
+
 }
 
 .delivery_heading_hr {
@@ -835,7 +885,7 @@ textarea {
     font-family: Kanit;
     margin-top: 20px;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 18px;
     line-height: 27px;
     letter-spacing: 0.2px;
@@ -931,7 +981,7 @@ textarea {
     height: 22px;
     font-family: Kanit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     text-align: center;
@@ -1018,12 +1068,21 @@ textarea {
 
 .searching-input {
     width: 626px;
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+
+    /* Second color */
+
+    color: #555D69;
     height: 48px;
     background: #F1F2F6 !important;
     border: 1px solid #DFE4EA;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 10px;
+    padding: 20px;
 
 }
 
@@ -1114,7 +1173,7 @@ textarea {
 .haqqinda-title {
     font-family: Kanit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     align-items: center;
@@ -1128,6 +1187,7 @@ textarea {
 .col-9_p {
     /* Mapcargo, is an accredited NVOCC (Non-Vessel Operating Common Carrier), as a neutral we select best in class carriers offering unique fixed price contracts and flexibility. Our wealth of experience and in house purchase order management system provide detailed visibility and communication. Contracts with the worlds leading carriers gives our clients huge flexibility and cost savings, and a range of door to door services Bespoke services including buyers consols, FCL (Full Container Load), LCL (Less than Container Load), cost plus, supply chain management and other unique initiatives Total visibility though our in-house purchase order management software, (Boxtrax) which provides shipment tracking, vendor compliance and customised reports Our staff are second to none providing a highly skilled service to our most demanding of customers. */
     width: 99%;
+    text-align: justify;
     margin-top: 40px;
     height: 100%;
     font-family: Kanit;
@@ -1372,6 +1432,19 @@ textarea {
     /* Main color */
     color: #57606F;
 
+}
+
+.newss_p_mobile {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+
+    /* Second color */
+
+    color: #555D69;
 }
 
 .newss_p {
@@ -1660,15 +1733,6 @@ textarea {
     display: none;
 }
 
-
-
-.shop-div-all:hover {
-    -webkit-box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
-    box-shadow: -1px 4px 26px -5px rgba(0, 0, 0, 0.75);
-    transition: all .2s ease-in-out;
-}
-
 .shop-text {
     font-family: 'Poppins', sans-serif;
     color: gray;
@@ -1740,6 +1804,16 @@ textarea {
     box-sizing: border-box;
     border-radius: 2px;
 
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.2px;
+
+    /* Main color */
+
+    color: #57606F;
 
     background-image: url('../img/arrow-down.png'),
         linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
@@ -1750,8 +1824,6 @@ textarea {
     background-size: 1.40em auto, 100%;
 
     display: block;
-
-    color: #444;
     height: 40px;
     padding: .6em 1.4em .5em .8em;
     width: 268px;
@@ -1851,6 +1923,8 @@ textarea {
 #logo2 {
     display: none;
     margin-right: 0;
+    margin: auto;
+    justify-content: center;
 }
 
 .faq-title {
@@ -1892,7 +1966,7 @@ textarea {
     margin-top: 50px;
     font-family: Kanit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     text-align: center;
@@ -2214,13 +2288,37 @@ s
     height: 35px;
     border-bottom: 1px solid #DFE4EA;
     width: 100%;
-    /* font-family: San Francisco;
+    font-family: San Francisco;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 17px;
     display: flex;
-    align-items: center; */
+    align-items: center;
+    background-image: url('../img/arrow-down.png'),
+        linear-gradient(to bottom, #ffffff 0%, #ffffff 100%);
+    background-repeat: no-repeat, repeat;
+    /* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+    background-position: right .7em top 50%, 0 0;
+    /* icon size, then gradient */
+    background-size: 1.40em auto, 100%;
+
+    display: block;
+    padding: .6em 1.4em .5em .8em;
+    /* useful when width is set to anything other than 100% */
+    box-sizing: border-box;
+    margin: 0;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    /* Main color
+    font-family: San Francisco;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
 
     /* Main color */
 
@@ -2331,7 +2429,6 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 50%;
     border: 2px solid white;
     cursor: pointer;
-    transition: .3s ease-in-out;
 }
 
 ​ input[type="range"]::-webkit-slider-thumb:hover {
@@ -2404,6 +2501,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .calc_img_p {
     display: none;
     width: 50px;
+    text-transform: capitalize;
     margin-top: 10px;
     font-size: 17px;
     margin-top: 8px;
@@ -2564,9 +2662,18 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 }
 
+.contact_form textarea {
+    border: 1px solid #B1B1B1;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
 .contact_form .form-group input {
     height: 48px;
     margin-bottom: 25px;
+    border: 1px solid #B1B1B1;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
 .contact_btn {
@@ -2615,8 +2722,6 @@ input[type="range"]::-webkit-slider-thumb:active {
 .information p {
     margin-top: 20px;
     width: 300px;
-    height: 154px;
-
     font-family: Kanit;
     font-style: normal;
     font-weight: 500;
@@ -2700,6 +2805,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .qayda_scrol p {
     /* Colibri Express - internet vasitəsi ilə Türkiyədən bağlamalarınızı güvən ve sürətlə Bakıya çatdırıb, müştəriyə təhvil verilmesini təmin edir. Bu xidmetin vasitəsi ilə ile siz Türkiyənin bütün mağazalarından istediyiniz məhsulu (qadağan olunmuş məhsullar xaric(clickable)) sifariş ede bilir ve bizim vasitəmizlə təvhil ala bilərsiniz. Məlumdur ki,Türk onlayn resursları mallarını yalnız Türkiyə ərazisində çatdırır ve bəzı sitələrdə ödəmələri yalnız Türk bankları tərəfindən verilən Visa ve ya Mastercard ödəniş kartları ile qebul edirlər Artıq türk dilini bilmek, türk bankında hesab açmağa ve Türkiyəyə alış-verişə getməyə ehtiyac qalmadı. Size sadəcə Türkiyənin onlayn mağazalarından m’hsul seçib ve münasib bir şəkildə ödəməyiniz kifayətdir. ALMAQ ve SİZE ÇATDIRMAQ BİZLİKDİR. Sizin qazancınız: Minimum komissiya olmadan, komissiya haqqı - yalnız 5% Müxtəlif ödəniş metodu: bank kartları, ödəniş terminalları, elektron pul, ani transferlər 4 dilde müştəri xidməti (az, ru, en, tr) Dollar, manat ve ya avro ile hesablaşmalar Hesablaşma tarixi Sifarişin veb sayt, e-poçt vasitəsi ilə, pulsuz SMS-bildirişləri ilə izlənməsi ve hesabatı Elektron formada ve online interaktiv məsləhetçi vasitesi ile sual-cavab Sosial şəbəkələrində interaktiv ünsiyyət Mağazalardakı promo aksiyalar - eyni məhsulun bir ədəddən artıq alındığı zaman endirimlər Şəffavlığın təmin edilməsi */
     font-family: Kanit;
+    text-align: justify;
     padding: 10px;
     width: 100%;
     font-style: normal;
@@ -3125,9 +3231,14 @@ input[type="range"]::-webkit-slider-thumb:active {
     color: #FFFFFF;
 }
 
+.footer_form textarea {
+    border: none;
+}
+
 .footer_form input {
     width: 197px;
     height: 32px;
+    border: none;
     background: rgba(255, 255, 255, .16) !important;
     border-radius: 2px !important;
     font-family: Kanit;
@@ -3191,7 +3302,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .xeberveyenilikler_title {
     font-family: Kanit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     display: flex;
@@ -3327,7 +3438,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .subscription-heading {
     font-family: Kanit;
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 32px;
     line-height: 48px;
     display: flex;

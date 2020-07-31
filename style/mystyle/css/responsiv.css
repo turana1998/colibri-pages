@@ -26,6 +26,10 @@
 }
 
 @media only screen and (min-device-width:1000px) and (max-device-width: 1280px) {
+    .users {
+        margin-left: -12px;
+    }
+
     .container {
         max-width: 90% !important;
 
@@ -227,6 +231,8 @@
 
     .containernav {
         padding: 0 15px;
+        height: 64px;
+        box-shadow: 0px 2px 8px rgba(47, 53, 66, 0.16);
     }
 }
 
@@ -240,12 +246,43 @@
 }
 
 @media only screen and (max-device-width: 767px) {
+    .carousel-indicators {
+        margin-bottom: 6%;
+        left: 16px;
+    }
+
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+    }
+
+    .carousel-indicators .active {
+        width: 6px;
+        height: 6px;
+    }
+
     .qayda_img {
         display: none;
     }
 
     .connect {
-        height: 30px;
+        height: 40px;
+    }
+
+    .contact_title {
+        margin-top: 20px
+    }
+
+    .contact_form textarea {
+        height: 165px;
+    }
+
+    .contact_form {
+        margin-top: 20px;
+    }
+
+    .contact_btn {
+        margin-bottom: 40px;
     }
 
     #overlay {
@@ -254,7 +291,7 @@
         display: none;
         width: 100%;
         height: 100%;
-        top: 95px;
+        top: 64px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -263,9 +300,9 @@
 
     }
 
-    .carousel-div_mobile {
+    /* .carousel-div_mobile {
         display: none;
-    }
+    } */
 
     .col-9_p {
         margin-top: 0;
@@ -328,9 +365,26 @@
         display: none;
     }
 
-    /* .mobile-users svg {
-        display: none;
-    } */
+    .mobile-users {
+        height: 64px;
+        align-items: center;
+        width: 40px;
+
+    }
+
+    .contact_title {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        align-items: center;
+        text-align: center;
+
+        /* Main color */
+
+        color: #57606F;
+    }
 
     .menu {
         background-color: #F16136;
@@ -416,6 +470,10 @@
 }
 
 @media (max-width:768px) and (min-width:300px) {
+    .navbar {
+        height: 64px;
+    }
+
     .mobile-navbar {
         display: block !important;
         z-index: 1000;
@@ -602,7 +660,7 @@
     }
 
     .image_orange {
-        width: 37px;
+        width: 60px;
         height: 1px;
         margin: auto;
         margin-right: 0;
@@ -629,9 +687,20 @@
         color: #747D8C;
     }
 
+    input[type=checkbox] {
+        background: #FFFFFF !important;
+        /* Second color */
+
+        border: 1px solid #555D69 !important;
+        box-sizing: border-box !important;
+        border-radius: 1px !important;
+        width: 16px !important;
+        height: 16px !important;
+    }
+
     .checkk {
         display: block;
-        margin-left: 72px;
+        margin-left: 5px;
         margin-top: 20px;
     }
 
@@ -664,19 +733,31 @@
         width: 298px;
     }
 
+    .xeberler_title {
+        font-family: Kanit;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 27px;
+        justify-content: center;
+        margin: 20px 0;
+
+        /* Main color */
+
+        color: #57606F;
+    }
+
     .tarifler_title {
         font-family: Kanit;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 27px;
 
         /* Main color */
-        width: 346px;
+        width: 100%;
         height: 12px;
-        margin: 0;
-        margin-top: 10px;
-
+        margin: 20px 0;
         color: #57606F;
 
     }
@@ -714,7 +795,7 @@
 
     .main-image {
         width: 346px;
-        margin-top: 60px;
+        padding-top: 25px;
         /* text-align: center; */
         margin: auto;
     }
@@ -735,7 +816,10 @@
     .shop-category-all {
         height: auto;
         padding-bottom: 20px;
-        padding-left: 15%;
+        padding-left: 10%;
+        max-width: 90%;
+        margin: auto;
+        margin-top: 10%;
     }
 
     .shop-div-all {
@@ -807,8 +891,9 @@
     }
 
     .xeberler_div {
-        margin-top: 40px;
-        width: auto;
+        width: 96%;
+        margin: auto;
+        margin-top: 20px;
         height: 500px;
         background: #FFFFFF;
         /* Shadow */
@@ -936,7 +1021,8 @@
         height: 10px;
         font-family: Kanit;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
+        margin-top: 5px;
         font-size: 15px;
         line-height: 22px;
         margin-bottom: 25px;
@@ -986,6 +1072,7 @@
         width: 126px;
         height: 60px;
         top: 80px;
+        left: 14px;
         text-align: start;
         font-family: Kanit;
         font-style: normal;
@@ -1023,7 +1110,7 @@
         height: 12px;
         font-family: Kanit;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 27px;
 
@@ -1101,7 +1188,7 @@
         height: 12px;
         font-family: Kanit;
         font-style: normal;
-        font-weight: 500;
+        font-weight: 600;
         font-size: 18px;
         line-height: 27px;
 
@@ -1133,7 +1220,7 @@
     .turkiye,
     .olke {
         margin-top: 20px;
-        width: 79% !important;
+        width: 90% !important;
     }
 
     .faq-blog {
@@ -1275,6 +1362,7 @@
     .mobile-users {
         display: flex !important;
         color: white;
+
     }
 }
 }
