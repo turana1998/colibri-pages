@@ -70,3 +70,15 @@ $("#mobile-toggle").click(function () {
 
   }
 });
+var btn = $('.circle_a');
+btn.on('click', function (e) {
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: 0
+  }, '300');
+});
+$('.hover-item').hover(function () {
+  $(this).find('.dropdown-content').stop(true, true).delay(500).fadeIn(800);
+}, function () {
+  $(this).find('.dropdown-content').stop(true, true).delay(500).fadeOut(800);
+});

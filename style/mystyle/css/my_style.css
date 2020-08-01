@@ -4,6 +4,7 @@
     display: flex;
     flex-direction: column;
 } */
+
 input,
 button {
     outline: none;
@@ -75,7 +76,12 @@ button {
 
 @font-face {
     font-family: Kanit;
-    src: url(../fonts/Kanit/Kanit-Regular.ttf);
+    src: url(../fonts/Kanit/Kanit-Light.ttf);
+}
+
+@font-face {
+    font-family: Kanit-2;
+    src: url(../fonts/Kanit/Kanit-Light.ttf);
 }
 
 body {
@@ -161,7 +167,6 @@ body {
     margin-left: 0px;
     line-height: 40px;
     padding-left: 40px;
-    transition: 0.2s;
     margin-top: 2px;
 
 }
@@ -206,7 +211,6 @@ body {
     margin-left: 0px;
     line-height: 40px;
     padding-left: 40px;
-    transition: 0.2s;
     margin-top: 2px;
 
 }
@@ -313,7 +317,6 @@ body {
     cursor: pointer;
     transform: translateX(-200%);
     border-radius: 50%;
-    transition: opacity 0.25s ease, transform 0.43s cubic-bezier(0.694, 0.048, 0.335, 1);
 }
 
 .icon-close:before {
@@ -329,7 +332,6 @@ body {
     border-top-color: #6078ea;
     border-left-color: #6078ea;
     border-bottom-color: #6078ea;
-    transition: opacity 0.2s ease;
 }
 
 .icon-close .x-up {
@@ -446,7 +448,6 @@ body {
     padding: 10px 14px;
     background: white;
     border-radius: 3px;
-    transition: all 0.4s ease;
     font-family: Kanit;
     font-style: normal;
     font-weight: normal;
@@ -689,6 +690,19 @@ textarea {
     background: url("../img/pattern.png");
     background-color: #223F2E;
     color: white !important;
+}
+
+.footer input::placeholder,
+.footer textarea::placeholder {
+    font-family: "Kanit-2" !important;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
 }
 
 .heading {
@@ -1750,7 +1764,6 @@ textarea {
 }
 
 .middle {
-    transition: .5s ease;
     opacity: 0;
     position: absolute;
     top: 80%;
@@ -2023,6 +2036,29 @@ textarea {
     margin: auto;
 }
 
+.olke.active {
+    background-color: #F16136 !important;
+    background-image: url(../img/abs.png);
+    background-repeat: no-repeat;
+    background-position: -13px -8px !important;
+    background-size: 64px 64px !important;
+}
+
+.olke.active p {
+    font-family: Kanit;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.2px;
+    width: 90px !important;
+
+    /* White */
+
+    color: #FFFFFF;
+
+}
+
 .olke {
     width: 181px;
     height: 48px;
@@ -2031,15 +2067,15 @@ textarea {
     padding-top: 5px;
 
 
-
 }
+
 
 
 .olke p {
 
     /* height: 16px; */
     /* font-family: Kanit; */
-    padding-left: 5px;
+    padding-left: 20px;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -2511,8 +2547,8 @@ input[type="range"]::-webkit-slider-thumb:active {
     color: #F16136;
     text-align: center;
     pointer-events: none;
-    -webkit-transition: opacity .25s cubic-bezier(0, 0, .2, 1);
-    transition: opacity .25s cubic-bezier(0, 0, .2, 1);
+    /* -webkit-transition: opacity .25s cubic-bezier(0, 0, .2, 1);
+    transition: opacity .25s cubic-bezier(0, 0, .2, 1); */
 }
 
 .slick-slide img {
@@ -3188,12 +3224,10 @@ input[type="range"]::-webkit-slider-thumb:active {
     color: #FFFFFF !important;
 }
 
-.qeydiyat_input::placeholder {}
-
 .description p {
     width: 95%;
     height: 94px;
-    font-family: Kanit;
+    font-family: Kanit-2 !important;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
@@ -3209,7 +3243,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .contact-heading {
     width: 118px;
     height: 12px;
-    font-family: Kanit;
+    font-family: Kanit-2;
     font-style: normal;
     /* font-weight: 600; */
     font-size: 16px;
@@ -3221,7 +3255,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 .contact-info p {
     width: 410px;
     height: 10px;
-    font-family: Kanit;
+    font-family: Kanit-2;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
