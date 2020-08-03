@@ -417,52 +417,6 @@
 
 
     </div>
-
-
-
-    <div class="modal fade" id="giris" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content giris_modal">
-                <div class="modal-header" style="justify-content: center !important;">
-                    <h5 class="giris_title">Giriş</h5>
-                    <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button> -->
-                </div>
-                <div class="modal-body">
-                    <form class="d-flex flex-column">
-                        <div class="form-group" style="margin-top: 40px !important">
-                            <button class="qeydiyyat" data-toggle="modal" data-dismiss="modal"
-                                data-target="#qeydiyyat"><img src="style/mystyle/img/qeydiyat.png">Qeydiyyat</button>
-                            <label for="recipient-name" class="col-form-label" style="margin:auto">Elektron Poçt</label>
-                            <input type="text" class="form-control giris_input" id="recipient-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Şifre</label>
-                            <input type="text" class="form-control giris_input" id="recipient-name">
-                        </div>
-                        <button type="button" class=" giris_btn" data-dismiss="modal">DAXİL OL</button>
-                        <button class="sifreberpa" data-toggle="modal" data-dismiss="modal"
-                            data-target="#sifreberpa">Şifrənizi
-                            unutmusunuz?</button>
-                    </form>
-                </div>
-                <div class="">
-                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
     <div class="container text-center">
         <div class="costumModal">
             <div id="costumModal15" class="modal" data-easein="bounceRightIn" tabindex="-1" role="dialog"
@@ -470,14 +424,15 @@
                 <div class="modal-dialog centered">
                     <div class="modal-content giris_modal">
                         <div class="modal-header" style="justify-content: center !important;">
-                            <h5 class="giris_title">Giriş</h5>
+                            <h5 class="giris_title">GİRİŞ</h5>
                             <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button> -->
                         </div>
                         <div class="modal-body">
-                            <form class="d-flex flex-column">
+                            <form class="d-flex flex-column giris_form">
                                 <div class="form-group" style="margin-top: 80px !important">
+                                    <button class="cixis" data-toggle="modal" data-dismiss="modal"></button>
                                     <button class="qeydiyyat" data-toggle="modal" data-dismiss="modal"
                                         data-target="#qeydiyyat"><img
                                             src="style/mystyle/img/qeydiyat.png">Qeydiyyat</button>
@@ -511,12 +466,13 @@
                 <div class="modal-header" style="justify-content: center !important;">
                     <h5 class="qeydiyyat_title">QEYDİYYAT</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span style="color: white;" aria-hidden="true">&times;</span>
+                        <span><img src="style/mystyle/img/close.png"></span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <form class="d-flex form_qeydiyyat ">
                         <div class="row">
+                            <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
                             <div class="d-flex qeydiyt">
                                 <div class="form-group  col-3">
                                     <!-- <label for="message-text" class="col-form-label  qeydiyat_label">Şifre</label> -->
@@ -538,7 +494,8 @@
                                         style="justify-content: space-between;    border-bottom: 1px solid #FFFFFF;width: 192px;">
                                         <input type="text" class="form-control qeydiyat_input" id="recipient-name"
                                             placeholder="Doğum tarixi" style="border: none;width: 180px;">
-                                        <img src="style/mystyle/img/teqvim.png" style="width: 20px; height: 20px;">
+                                        <img src="style/mystyle/img/teqvim.png" style="width: 20px; height: 20px;margin-top: 9%;
+                                        margin-left: -3%;">
                                     </div>
 
                                 </div>
@@ -549,8 +506,7 @@
                                     <!-- <label for="message-text" class="col-form-label  qeydiyat_label">Telefon
                                 nömrəsi</label> -->
                                     <input type="text" class="form-control qeydiyat_input" id="recipient-name"
-                                        placeholder="Telefon
-                            nömrəsi">
+                                        placeholder="Telefon nömrəsi">
                                 </div>
                                 <div class="form-group col-3">
                                     <!-- <label for="message-text" class="col-form-label  qeydiyat_label">Əlavə Telefon
@@ -626,7 +582,8 @@
                                         style="justify-content: space-between;    border-bottom: 1px solid #FFFFFF;">
                                         <input type="text" class="form-control qeydiyat_input_col6" id="recipient-name"
                                             placeholder="Şifrə" style="border: none;">
-                                        <img src="style/mystyle/img/unvisible.png" style="width: 20px; height: 20px;">
+                                        <img src="style/mystyle/img/unvisible.png" style="width: 20px; height: 20px;margin-top: 5%;
+                                        margin-left: -3%;">
                                     </div>
                                 </div>
                             </div>
@@ -648,12 +605,14 @@
                 <div class="modal-header" style="justify-content: center !important;">
                     <h5 class="berpa_title">ŞİFRƏ BƏRPASI</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                        <span><img src="style/mystyle/img/close.png"></span>
                     </button>
                 </div>
                 <div class="modal-body" style="border: none;">
+                    <button class="cixis_qeydiyat" data-toggle="modal" data-dismiss="modal"></button>
                     <form class="d-flex flex-column">
-                        <div class="form-group" style="margin-top: 40px!important">
+                        <div class="form-group" style="width: 90%;
+                        margin: auto;margin-top: 40px!important">
                             <label for="recipient-name" class="col-form-label berpa_label"
                                 style="margin:auto">Epoçt</label>
                             <input type="text" class="form-control berpa_input" id="recipient-name">

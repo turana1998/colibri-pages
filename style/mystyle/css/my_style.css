@@ -2910,7 +2910,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .giris_modal {
     width: 410px;
-    height: 430px;
+    height: 450px;
 
     background: #FFFFFF;
     /* Shadow */
@@ -2978,6 +2978,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .sifreberpa {
     height: 12px;
+    margin-top: 20px;
     background-color: transparent;
     border: none;
     outline: none;
@@ -3005,7 +3006,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     outline: none;
     border: none;
     left: 85%;
-    top: -4%;
+    top: -15%;
     cursor: pointer;
     border-radius: 50%;
     background: #1F3F30;
@@ -3022,6 +3023,34 @@ input[type="range"]::-webkit-slider-thumb:active {
     /* White */
 
     color: #FFFFFF;
+}
+
+.cixis {
+    position: absolute;
+    width: 4px;
+    height: 48px;
+    left: -1%;
+    border: none;
+    outline: none;
+    top: -8%;
+
+    /* footer */
+
+    background: #1F3F30;
+}
+
+.cixis_qeydiyat {
+    position: absolute;
+    width: 4px;
+    height: 48px;
+    left: 0%;
+    border: none;
+    outline: none;
+    top: -8%;
+
+    /* footer */
+
+    background: #ffffff;
 }
 
 .giris_title {
@@ -3049,7 +3078,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 }
 
 .berpa_title {
-    width: 220px;
+    width: 100%;
     height: 22px;
     font-family: Kanit;
     font-style: normal;
@@ -3057,8 +3086,7 @@ input[type="range"]::-webkit-slider-thumb:active {
     font-size: 32px;
     line-height: 48px;
     text-align: center;
-    margin-left: 85px;
-    margin-top: 20px;
+    margin-top: -4px;
 
     /* White */
 
@@ -3093,6 +3121,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
     color: #1F3F30;
     margin: auto;
+    margin-top: 20px;
 }
 
 .berpa_label {
@@ -3204,6 +3233,7 @@ input[type="range"]::-webkit-slider-thumb:active {
 
 .modal-header {
     border: none !important;
+    padding-top: 45px;
 }
 
 .form_qeydiyyat .form-control,
@@ -3496,4 +3526,9 @@ input[type="range"]::-webkit-slider-thumb:active {
     background: #FFFFFF;
     opacity: 0.08;
     position: relative;
+}
+
+.giris_form {
+    width: 85%;
+    margin: auto;
 }
