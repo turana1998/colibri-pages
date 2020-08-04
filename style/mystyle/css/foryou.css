@@ -35,8 +35,9 @@ li.nav-item.dropdown::marker {
   color: #ffffff !important;
   /* position: absolute; */
   background-repeat: no-repeat;
-  padding-top: 18px;
+  padding-top: 11px;
   height: 62px;
+  font-size: 16px;
 }
 
 .hover-item:hover:focus+.dropdown-menu {
