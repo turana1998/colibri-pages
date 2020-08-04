@@ -734,9 +734,8 @@
     }
 
     .xeberler_title {
-        font-family: Kanit;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 27px;
         justify-content: center;
@@ -991,7 +990,7 @@
     .questionn-heading {
         width: 100%;
         height: 12px;
-        font-family: Kanit;
+        font-family: Kanit-semibold;
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
@@ -1019,9 +1018,9 @@
     .advantages-info__heading {
 
         height: 10px;
-        font-family: Kanit;
+        font-family: Kanit-medium !important;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         margin-top: 5px;
         font-size: 15px;
         line-height: 22px;
@@ -1108,9 +1107,9 @@
     .xeberler-yenilikler-title {
         width: 345px;
         height: 12px;
-        font-family: Kanit;
+        font-family: Kanit-medium !important;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 27px;
 
@@ -1188,7 +1187,7 @@
         height: 12px;
         font-family: Kanit;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         font-size: 18px;
         line-height: 27px;
 
